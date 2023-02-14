@@ -50,3 +50,4 @@ else:
         print("You lose.")
     elif user_input == computer_input:
         print("Game Draw.")
+print("Game Over")
