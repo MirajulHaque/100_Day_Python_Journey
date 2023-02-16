@@ -11,8 +11,12 @@ for n in range(0, len(chosen_word)):
 print(blank_word)
 guess = input("Guess a letter: ").lower()
 
-# for letter in chosen_word:
-#     if guess == letter:
-#         print("Correct")
-#     else:
-#         print("Wrong")
+count = 0
+for letter in chosen_word:
+    if guess == letter:
+        blank_word[count] = guess
+    elif guess != letter:
+        print("Wrong")
+    count += 1
+
+print(blank_word)
